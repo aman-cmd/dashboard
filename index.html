@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fde23c79ca.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <ul class="navbar">
+                <li><i class="fas fa-bars"></i></li>
+                <li>
+                    <select name="menu" id="menu">
+                        <option value="volvo">Create</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </li>
+                <li class="right">
+                    <input type="text" id="search" placeholder="Search..."><i id="searchicon" class="fas fa-search"></i>
+                </li>
+                <li>
+                    <select name="language" id="lang-selector">
+                        <option value="volvo"><img src="./assets/english.svg" alt=""/> English</option>
+                        <option value="saab">Hindi</option>
+                        <option value="mercedes">French</option>
+                    </select>
+                </li>
+                <li>
+                    <img src="./assets/corners.svg" alt="" id="corner">
+                </li>
+                <li>
+                    <i class="far fa-bell" id="bellicon"></i><div id="counticon">3</div>
+                </li>
+                <li>
+                    <img src="./assets/trump.jpg" id="profilepic" alt="">
+                </li>
+            </ul>
+        </header>
+        <aside class="sidenav">
+            <img src="./assets/geekyants-log.png" alt="" id="logo">
+            <span>MAIN</span>
+            <ul>
+                <li><i class="fas fa-home"></i><span>Dashboard</span><div class="sidesubmenu"><div id="first" class="sidebarcounticon">2</div></div></li>
+                <li><i class="fas fa-calendar-week"></i><span>Calender</span><div class="sidesubmenu"></div></li>
+                <li><i class="fas fa-envelope-square"></i><span>Email</span><div class="sidesubmenu"><i class="fas fa-angle-right"></i></div></li>
+                <li><i class="fas fa-cube"></i><span>UI Elements</span><div class="sidesubmenu"><i class="fas fa-angle-right"></i></div></li>
+                <li><i class="fab fa-wpforms"></i><span>Forms</span><div class="sidesubmenu"><div id="second" class="sidebarcounticon">9</div></div></li>
+                <li><i class="fas fa-chart-pie"></i><span>Charts</span><div class="sidesubmenu"><i class="fas fa-angle-right"></i></div></li>
+                <li><i class="fas fa-table"></i><span>Tables</span><div class="sidesubmenu"><i class="fas fa-angle-right"></i></div></li>
+                <li><i class="fas fa-icons"></i><span>Icons</span><div class="sidesubmenu"><i class="fas fa-angle-right"></i></div></li>
+                <li><i class="fas fa-map-marker-alt"></i><span>Maps</span><div class="sidesubmenu"><div id="third" class="sidebarcounticon">2</div></div></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="dashboard-header">
+                <div id="dashboard-text">
+                    <p><b><h3>Dashboard</h3></b></p>
+                    <p>Welcome to Veltrix Dashboard</p>
+                </div>
+                <button id="settings-button"><i class="fas fa-cog"></i>&nbsp;Settings</button>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="statcard-top">
+                        <div class="boxed-icon">
+                            <img src="https://img.icons8.com/color/48/000000/content.png"/>
+                        </div>
+                        <div class="stat-number">
+                            <b>ORDERS</b> <br>
+                            <span>1,685</span>&nbsp;<span><i class="fas fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="statcard-bottom">
+                        <div>
+                            <span>Since last month</span> <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="statcard-top">
+                        <div class="boxed-icon">
+                            <img src="https://img.icons8.com/color/48/000000/economic-improvement.png"/>
+                        </div>
+                        <div class="stat-number">
+                            <b>REVENUE</b> <br>
+                            <span>52,368</span>&nbsp;<span><i class="fas fa-arrow-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="statcard-bottom">
+                        <div>
+                            <span>Since last month</span> <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="statcard-top">
+                        <div class="boxed-icon">
+                            <img src="https://img.icons8.com/color/48/000000/price-tag-euro.png"/>
+                        </div>
+                        <div class="stat-number">
+                            <b>AVERAGE PRICE</b> <br>
+                            <span>15.8</span>&nbsp;<span><i class="fas fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="statcard-bottom">
+                        <div>
+                            <span>Since last month</span> <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="statcard-top">
+                        <div class="boxed-icon">
+                            <img src="https://img.icons8.com/color/48/000000/suitcase.png"/>
+                        </div>
+                        <div class="stat-number">
+                            <b>PRODUCT SOLD</b> <br>
+                            <span>2436</span>&nbsp;<span><i class="fas fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="statcard-bottom">
+                        <div>
+                            <span>Since last month</span> <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transactions">
+                <div id="tableheading">
+                    <b>Latest Transactions</b>
+                </div>
+                <table>
+                    <tr>
+                        <th>(#)id</th>
+                        <th>Name</th>
+                        <th></th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><b>#14256</b></td>
+                        <td><img src="./assets/person1.jpeg" alt=""></td>
+                        <td>Philip Smead</td>
+                        <td>15/1/2018</td>
+                        <td>$94</td>
+                        <td><span class="delivered">Delivered</span></td>
+                        <td><span class="edit-button">Edit</span></td>
+                    </tr>
+                    <tr>
+                        <td><b>#14257</b></td>
+                        <td><img src="./assets/person2.jpeg" alt=""></td>
+                        <td>Brent Shipley</td>
+                        <td>15/4/2019</td>
+                        <td>$112</td>
+                        <td><span class="pending">Pending</span></td>
+                        <td><span class="edit-button">Edit</span></td>
+                    </tr>
+                    <tr>
+                        <td><b>#14258</b></td>
+                        <td><img src="./assets/person3.jpeg" alt=""></td>
+                        <td>Robert Sitton</td>
+                        <td>09/10/2020</td>
+                        <td>$116</td>
+                        <td><span class="delivered">Delivered</span></td>
+                        <td><span class="edit-button">Edit</span></td>
+                    </tr>
+                    <tr>
+                        <td><b>#14259</b></td>
+                        <td><img src="./assets/person4.jpeg" alt=""></td>
+                        <td>Alberto Jackson</td>
+                        <td>31/5/2021</td>
+                        <td>$109</td>
+                        <td><span class="cancel">Cancel</span></td>
+                        <td><span class="edit-button">Edit</span></td>
+                    </tr>
+                    <tr>
+                        <td><b>#14260</b></td>
+                        <td><img src="./assets/person5.jpeg" alt=""></td>
+                        <td>David Sanchez</td>
+                        <td>03/10/2017</td>
+                        <td>$120</td>
+                        <td><span class="delivered">Delivered</span></td>
+                        <td><span class="edit-button">Edit</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="chat">
+                <b><h3>Chat</h3></b>
+                <div class="chat-screen">
+                    <div class="message-left">
+                        <div class="leftmsgsender">
+                            <img src="./assets/person1.jpeg" alt="" class="leftmsgimg">
+                            <div class="msgsendtime">10:00</div>
+                        </div>
+                        <span class="left-triangle"></span>
+                        <div class="leftmsg"><b>John Deo</b><br>Hello</div>
+                    </div>
+                    <div class="message-right">
+                        <div class="rightmsgsender">
+                            <img src="./assets/person2.jpeg" alt="" class="rightmsgimg">
+                            <div class="msgsendtime">10:01</div>
+                        </div>
+                        <span class="right-triangle"></span>
+                        <div class="rightmsg"><b>Smith</b><br>Hi, how are you? What about our <br>next meeting?</div>
+                    </div>
+                    <div class="message-left">
+                        <div class="leftmsgsender">
+                            <img src="./assets/person1.jpeg" alt="" class="leftmsgimg">
+                            <div class="msgsendtime">10:04</div>
+                        </div>
+                        <span class="left-triangle"></span>
+                        <div class="leftmsg"><b>John Deo</b><br>Yeah everything is fine</div>
+                    </div>
+                    <div class="message-right">
+                        <div class="rightmsgsender">
+                            <img src="./assets/person2.jpeg" alt="" class="rightmsgimg">
+                            <div class="msgsendtime">10:05</div>
+                        </div>
+                        <span class="right-triangle"></span>
+                        <div class="rightmsg"><b>Smith</b><br>Wow thats great</div>
+                    </div>
+                    <div class="message-right">
+                        <div class="rightmsgsender">
+                            <img src="./assets/person2.jpeg" alt="" class="rightmsgimg">
+                            <div class="msgsendtime">10:05</div>
+                        </div>
+                        <span class="right-triangle"></span>
+                        <div class="rightmsg"><b>Smith</b><br>This is the next message <br> after the previous message</div>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <input type="text" placeholder="Enter yout text">
+                    <button>Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
